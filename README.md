@@ -1,5 +1,3 @@
-# efilm_interview_test_api
-
 <h1>Despliegue Version Español, PARTE API/ BACK</h1>
 
 <h2>Nombre Proyecto</h2>
@@ -32,4 +30,4 @@ TASK APP
 <h3>🟦 2.- Editor Codigo (IDE) / Terminal, acceder a la carpeta, con la ruta .../efilm_interview_test_api</h3>
 <h3>🟦 3.- Ejecutar comando "npm i" ( o "npm install") para descargar las dependencias necesarias y la carpeta node modules.</h3>
 <h3>🟦 4.- Arrancar la aplicación, parte api, con comando "npm start"</h3>
-<h3>🟦 5.- Se recomienda arrancar en primer lugar, esta parte, back/ api, y posteriormente la parte del cliente (<a href="https://github.com/Ssergiomc/efilm_interview_test_client" target="_blank">Cliente</a>).</h3>
+<h3>🟦 5.- Se recomienda arrancar en primer lugar, esta parte, back/ api, y posteriormente la parte del cliente (<a href="https://github.com/Ssergiomc/efilm_interview_test_client">Cliente</a>).</h3>
