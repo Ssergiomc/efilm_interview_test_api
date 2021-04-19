@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+require('dotenv').config();
 const mongodb = require('mongodb');
 const cors = require('cors');
 
@@ -45,11 +46,9 @@ app.use(function (err, req, res, next) {
 });
 
 let MongoClient = mongodb.MongoClient;
-console.log(`Conectando a  -> BBDD remota Mongo Atlas`);
+console.log(`Conectando a  -> ${process.env.MONGODB_LOCATION}`);
 
-const uri = "mongodb+srv://Ssergiomc_84:Nahi.Ihan84_Perro_campo@cluster0.nbeu6.mongodb.net/";
-
-MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }, function (err, client) {
+MongoClient.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true }, function (err, client) {
   if (err !== null) {
     console.log(err);
   } else {
