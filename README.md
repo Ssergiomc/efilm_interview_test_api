@@ -2,7 +2,8 @@
 
 <h2>Nombre Proyecto</h2>
 
-TASK APP
+<h3>TASK APP</h3>
+
 
 <h2>Características Back</h2>
 
@@ -11,10 +12,12 @@ TASK APP
 <h4> 🔹 Cifrado de contraseñas.</h4> 
 <h4> 🔹 Rutas por componentes a través de router.</h4>   
 <h4> 🔹 CRUD de tareas: GET / POST / PUT / DELETE.</h4>  
-<h4> 🔹 Metodos CRUD con Form e Input.</h4>  
+<h4> 🔹 Metodos CRUD con Form e Input y a traves de evento con botón.</h4>  
 <h4> 🔹 Relación métodos CRUD con acción en bbdd.</h4> 
 <h4> 🔹 Modelado de bbdd.</h4> 
 <h4> 🔹 Conexión bbdd online MongoDB Atlas Database - The Cloud-Native Database.</h4>
+<h4> 🔹 Protección ruta conexión (usuario y contraseña) bbdd online, MongoDB Atlas Database.</h4>
+
 
 <h2>Tecnologías</h2>
 
@@ -23,11 +26,13 @@ TASK APP
 ![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white&labelColor=101010)
 ![Mongo DB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=101010)
 ![Bcrypt](https://img.shields.io/badge/Bcrypt-CB3837?style=for-the-badge&logo=npm&logoColor=white&labelColor=101010)
+![Dotenv](https://img.shields.io/badge/Dotenv-CB3837?style=for-the-badge&logo=npm&logoColor=white&labelColor=101010)
 
-<h2>Despliegue</h2>
+
+<h2>Despliegue en Local</h2>
 
 <h3>🟦 1.- Clonado repositorio</h3>
-<h3>🟦 2.- Editor Codigo (IDE) / Terminal, acceder a la carpeta, con la ruta .../efilm_interview_test_api</h3>
+<h3>🟦 2.- Editor Codigo (IDE) Terminal, acceder a la carpeta, con la ruta .../efilm_interview_test_api</h3>
 <h3>🟦 3.- Ejecutar comando "npm i" ( o "npm install") para descargar las dependencias necesarias y la carpeta node modules.</h3>
 <h3>🟦 4.- Arrancar la aplicación, parte api, con comando "npm start"</h3>
 <h3>🟦 5.- Se recomienda arrancar en primer lugar, esta parte, back/ api, y posteriormente la parte del cliente (<a href="https://github.com/Ssergiomc/efilm_interview_test_client">Cliente</a>).</h3>
