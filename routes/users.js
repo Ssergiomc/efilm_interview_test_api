@@ -1,11 +1,12 @@
 var express = require('express');
 var router = express.Router();
+const CLIENT = `${process.env.CLIENT_PROTOCOL}://${process.env.CLIENT_URL}:${process.env.CLIENT_PORT}`;
+
 
 var bcrypt = require('bcrypt');
 const { ObjectId } = require('mongodb');
 router.use(express.json());
 router.use(express.urlencoded({ extended: false }));
-
 
 /* GET users listing. */
 // router.get('/', function (req, res, next) {
@@ -20,7 +21,7 @@ router.post('/register', (req, res) => {
   let encryptedPassw = bcrypt.hashSync(plainPassword, 10);
   newUser.password = encryptedPassw;
 
-  // console.log("Mail usuario " + newUser.email);
+  // console.log(`Mail usuario ${newUser.email}`);
 
   dbConnection = req.app.locals.db;
   dbConnection.collection('users').find({ "email": newUser.email }).toArray(function (err, datos) {
@@ -28,14 +29,14 @@ router.post('/register', (req, res) => {
       res.send("Ha habido un error: " + err);
     } else {
       if (datos.length > 0) {
-        res.redirect(`http://localhost:3000/register`);
+        res.redirect(`${CLIENT}/register`);
       } else {
         dbConnection.collection('users').insertOne(newUser, function (err) {
           if (err != null) {
             console.log(err);
             res.send("Ha habido un error: " + error);
           } else {
-            res.redirect(`http://localhost:3000/login`);
+            res.redirect(`${CLIENT}/login`);
           }
 
         })

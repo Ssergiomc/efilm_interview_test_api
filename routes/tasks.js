@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+const CLIENT = `${process.env.CLIENT_PROTOCOL}://${process.env.CLIENT_URL}:${process.env.CLIENT_PORT}`;
+
 
 const { ObjectId } = require('mongodb');
 
@@ -64,14 +66,12 @@ router.post("/createnewtask/:name/:id", function (req, res) {
         if (err != null) {
             res.send("Ha habido un error: " + err);
         } else {
-            res.redirect(`http://localhost:3000/modifyTasks`);
+            res.redirect(`${CLIENT}/modifyTasks`);
         }
     });
 });
 
-/* PUT to update a  task from the user. 
-*************************************
-************** *************************/
+/* PUT to update a task from the user. */
 router.put("/modifyonetask/:taskid", function (req, res) {
 
     let newTaskName = req.body.newNameTask;
@@ -83,7 +83,6 @@ router.put("/modifyonetask/:taskid", function (req, res) {
             res.send("Ha habido un error: " + err);
         } else {
             res.send({ status: 0 });
-            // res.send(`http://localhost:3000/modifyTasks`);
         }
     });
 });
