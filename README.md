@@ -27,6 +27,7 @@
 ![Mongo DB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=101010)
 ![Bcrypt](https://img.shields.io/badge/Bcrypt-CB3837?style=for-the-badge&logo=npm&logoColor=white&labelColor=101010)
 ![Dotenv](https://img.shields.io/badge/Dotenv-CB3837?style=for-the-badge&logo=npm&logoColor=white&labelColor=101010)
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white&labelColor=101010)
 
 
 <h2>Despliegue en Local</h2>
