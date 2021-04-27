@@ -33,7 +33,17 @@
 <h2>Despliegue en Local</h2>
 
 <h3>🟦 1.- Clonado repositorio</h3>
-<h3>🟦 2.- Editor Codigo (IDE) Terminal, acceder a la carpeta, con la ruta .../efilm_interview_test_api</h3>
-<h3>🟦 3.- Ejecutar comando "npm i" ( o "npm install") para descargar las dependencias necesarias y la carpeta node modules.</h3>
-<h3>🟦 4.- Arrancar la aplicación, parte api, con comando "npm start"</h3>
-<h3>🟦 5.- Se recomienda arrancar en primer lugar, esta parte, back/ api, y posteriormente la parte del cliente (<a href="https://github.com/Ssergiomc/efilm_interview_test_client">Cliente</a>).</h3>
+<h3>🟦 2.- Tras despliegue en Plataforma "Heroku". Se hace necesaria la creación de archivo ".env" con las variables de entorno para ejecutar la aplicación en local.</h3>
+<h3>🟦 2.1.- Dentro de carpeta "efilm_interview_test_api" crear archivo ".env"</h3>
+<h3>🟦 2.2.- Contenido archivo ".env" con la definición de las variables a emplear en local.</h3>
+    * PORT=9000
+    * MONGODB_URI= conexion a la bbdd remota en Mongo Atlas si estas interesado en ella deberas contactarme :)
+    * #MONGODB_URI= si tuviera coleccion en mongo local 
+    * MONGODB_LOCATION=Conectado a BBDD remota Mongo Atlas
+    * CLIENT_PROTOCOL=http
+    * CLIENT_URL=localhost
+    * CLIENT_PORT=3000
+<h3>🟦 3.- Editor Codigo (IDE) Terminal, acceder a la carpeta, con la ruta .../efilm_interview_test_api</h3>
+<h3>🟦 4.- Ejecutar comando "npm i" ( o "npm install") para descargar las dependencias necesarias y la carpeta node modules.</h3>
+<h3>🟦 5.- Arrancar la aplicación, parte api, con comando "npm start"</h3>
+<h3>🟦 6.- Se recomienda arrancar en primer lugar, esta parte, back/ api, y posteriormente la parte del cliente (<a href="https://github.com/Ssergiomc/efilm_interview_test_client">Cliente</a>).</h3>
